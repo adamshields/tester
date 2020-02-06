@@ -17,6 +17,14 @@ def about_page(request):
     }
     return render(requests, "home_page.html", context)
 
+def login_page(request):
+    return render(request, "auth/login.html", {})
+
+def register_page(request):
+    return render(request, "auth/register.html", {})
+
+
+
 def contact_page(request):
     contact_form = ContactForm(request.POST or None)
     context = {
