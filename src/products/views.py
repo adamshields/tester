@@ -51,12 +51,16 @@ def product_detail_view(request, pk=None, *args, **kwargs):
     # except:
     #     print("huh?")
 
-    qs  = Product.objects.filter(id=pk)
-    #print(qs)
-    if qs.exists() and qs.count() == 1: # len(qs)
-        instance = qs.first()
-    else:
-        raise Http404("Product doesn't exist")
+    instance = Product.objects.get_by_id(pk)
+    if instance is None:
+        raise Http404("Product Does Not Exist")
+    # print(instance)
+    # qs  = Product.objects.filter(id=pk)
+    # #print(qs)
+    # if qs.exists() and qs.count() == 1: # len(qs)
+    #     instance = qs.first()
+    # else:
+    #     raise Http404("Product doesn't exist")
 
     context = {
         'object': instance
