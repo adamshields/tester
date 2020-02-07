@@ -7,9 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Tab Title -->
     <title>Base Template</title>
+    <!-- CSS -->
+    {% include 'base/css.html' %}
+    {% block base_head %}
+    {% endblock base_head %}
   </head>
-  <body>
-{% block content %}
-{% endblock content %}
-  </body>
+    <body>
+        <!-- NAVBAR -->
+        {% include 'base/navbar.html' with brand_name='eCommerce' %}
+        
+            {% block content %}
+                <!-- Dynamic Content -->
+            {% endblock content %}
+        
+        <!-- JavaScript -->
+        {% include 'base/js.html' %}
+    </body>
 </html>

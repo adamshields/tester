@@ -28,6 +28,7 @@ def contact_page(request):
         "title": "Contact",
         "content": "Welcome to the Contact Page",
         "form": contact_form,
+        # "brand": "New Brand Name",
     }
     if contact_form.is_valid():
         print(contact_form.cleaned_data)
