@@ -19,7 +19,7 @@ urlpatterns = [
     path('contact/', contact_page),
     path('login/', login_page),
     path('register/', register_page),
-    path('products/', include('products.urls')),
+    path('products/', include('products.urls', namespace='products')),
     # re_path(r'^featured/$', ProductFeaturedListView.as_view()),
     # re_path(r'^featured/(?P<pk>\d+)/$', ProductFeaturedDetailView.as_view()),
     # path('products/', ProductListView.as_view()),

@@ -1,3 +1,5 @@
+from django.urls import reverse
+
 import random
 import os
 from django.db import models
@@ -61,7 +63,8 @@ class Product(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return "/products/{slug}/".format(slug=self.slug)
+        # return "/products/{slug}/".format(slug=self.slug)
+        return reverse("products:detail", kwargs={"slug": self.slug})
 
 def product_pre_save_receiver(sender, instance, *args, **kwargs):
     if not instance.slug:
