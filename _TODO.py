@@ -3,3 +3,4 @@
 
 # Columns & Rows Commit
 # 1-a Basic Search View
+# Display Query to User
