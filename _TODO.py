@@ -2,3 +2,4 @@
 # https://www.codingforentrepreneurs.com/courses/ecommerce/templates/forloop-counter-cycle
 
 # Columns & Rows Commit
+# 1-a Basic Search View
