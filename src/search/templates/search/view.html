@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class='row' mb-3>
-{% if request.GET.q %}
-    <div class='col-12'>
-        <b>Results for {{ request.GET.q }}</b>
-        <hr/>
-    </div>
+<div class='row mb-3'>
+    {% if request.GET.q %}
+        <div class='col-12'>
+            <b>Results for {{ request.GET.q }}</b>
+            <hr/>
+        </div>
 {% else %}
 
-    <div class='col-12 col-md6 mx-auto'>
+    <div class='col-12 col-md-6 mx-auto'>
         <input class='form-control' type='text' placeholder="Search">
     </div>
 {% endif %}
