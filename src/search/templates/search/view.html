@@ -3,10 +3,12 @@
 {% block content %}
 
 <div class='row'>
+{% if request.GET.q %}
     <div class='col-12' mb-3>
-        Searched for {{ request.GET.q }}
+        <b>Results for {{ request.GET.q }}</b>
         <hr/>
     </div>
+{% endif %}
 
     {% for obj in object_list %}
         <div class='col'>
