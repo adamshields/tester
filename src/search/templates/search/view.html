@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class='row mb-3'>
-    {% if request.GET.q %}
+    {% if query %}
         <div class='col-12'>
-            <b>Results for {{ request.GET.q }}</b>
+            <b>Results for {{ query }}</b>
             <hr/>
         </div>
 {% else %}

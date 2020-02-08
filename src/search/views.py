@@ -8,8 +8,8 @@ from products.models import Product
 class SearchProductView(ListView):
     template_name = "search/view.html"
 
-    def get_context_data(self, **kwargs):
-        context = super(SearchProductView).get_context_data(*args, **kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super(SearchProductView, self).get_context_data(*args, **kwargs)
         context["query"] = self.request.GET.get('q')
         return context
     
