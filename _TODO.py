@@ -4,3 +4,4 @@
 # Columns & Rows Commit
 # 1-a Basic Search View
 # Display Query to User
+# # 6:33 in video - added get_context_data to view so query now == self.request.get('q') about to use it in the template
