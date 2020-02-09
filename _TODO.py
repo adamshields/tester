@@ -62,3 +62,8 @@ Q(tag__name__icontains=query) # if there was a foreign key to this tag
 # https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/tag-component
 
 # Make a new component called tags
+
+# Basically adding the Tag model class for lookups
+# Adding products manytomanyfield that looks up from Products Model
+# Added to Admin
+# Migrated
