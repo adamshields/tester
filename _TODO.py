@@ -68,3 +68,11 @@ Q(tag__name__icontains=query) # if there was a foreign key to this tag
 # Added to Admin
 # Migrated
 # Added tags in DB
+
+# Show how to do a reverse lookup, 
+
+# example get a product based off a tag and tag based off a product
+
+# Shell Commands for a Brief intro to Foreign Keys
+# https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/shell-commands-brief-intro-foreign-keys
+# https://github.com/codingforentrepreneurs/eCommerce/tree/a85117d052ceaa054f1b025613bbbc46695ea0c0
