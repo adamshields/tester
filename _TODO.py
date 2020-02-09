@@ -145,3 +145,20 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 
 # here is the documentation for sessions
 # https://docs.djangoproject.com/en/3.0/topics/http/sessions/
+
+# sessions have all these different values based on print(dir(request.session))
+
+
+<django.contrib.sessions.backends.db.SessionStore object at 0x0000021471ACEF70>
+['TEST_COOKIE_NAME', 'TEST_COOKIE_VALUE', '_SessionBase__not_given', '_SessionBase__session_key', '__class__', 
+'__contains__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', 
+'__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
+'__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', 
+'__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_get_new_session_key', '_get_or_create_session_key', 
+'_get_session', '_get_session_from_db', '_get_session_key', '_hash', '_session', '_session_key', '_set_session_key', 
+'_validate_session_key', 'accessed', 'clear', 'clear_expired', 'create', 'create_model_instance', 'cycle_key', 
+'decode', 'delete', 'delete_test_cookie', 'encode', 'exists', 'flush', 'get', 'get_expire_at_browser_close', 
+'get_expiry_age', 'get_expiry_date', 'get_model_class', 'get_session_cookie_age', 'has_key', 'is_empty', 'items', 
+'keys', 'load', 'model', 'modified', 'pop', 'save', 'serializer', 'session_key', 'set_expiry', 'set_test_cookie', 
+'setdefault', 'test_cookie_worked', 'update', 'values']
+[09/Feb/2020 16:51:41] "GET /cart/ HTTP/1.1" 200 3559
