@@ -134,3 +134,7 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 # https://github.com/codingforentrepreneurs/eCommerce/tree/ab6ba98698080e5290f0c72e94edc6ebea229a4e
 
 # CREATE NEW COMPONENT CALLED CARTS
+
+# START OF DJANGO SESSIONS
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/django-sessions
+# https://github.com/codingforentrepreneurs/eCommerce/tree/4b2544743e5b3c650231cf10f8f4ba3f85e10382
