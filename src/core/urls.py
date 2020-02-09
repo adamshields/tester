@@ -4,10 +4,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.generic import TemplateView
-# from products.views import (
-#     ProductDetailSlugView, ProductDetailView, ProductFeaturedDetailView,
-#     ProductFeaturedListView, ProductListView, product_detail_view,
-#     product_list_view)
+
+from carts.views import cart_home
 
 from .views import (about_page, contact_page, home_page, login_page,
                     register_page)
@@ -18,17 +16,11 @@ urlpatterns = [
     path('about/', about_page, name='about'),
     path('contact/', contact_page, name='contact'),
     path('login/', login_page, name='login'),
+    path('cart/', cart_home, name='cart'),
     path('register/', register_page, name='register'),
     path('bootstrap/', TemplateView.as_view(template_name='bootstrap/example.html')),
     path('products/', include('products.urls', namespace='products')),
     path('search/', include('search.urls', namespace='search')),
-    # re_path(r'^featured/$', ProductFeaturedListView.as_view()),
-    # re_path(r'^featured/(?P<pk>\d+)/$', ProductFeaturedDetailView.as_view()),
-    # path('products/', ProductListView.as_view()),
-    # path('products-fbv', product_list_view),
-    # # re_path(r'^products/(?P<pk>\d+)/$', ProductDetailView.as_view()), # This is the Private Key View Commented out No Longer Needed since using slugs
-    # re_path(r'^products/(?P<slug>[\w-]+)/$', ProductDetailSlugView.as_view()),
-    # re_path(r'^products-fbv/(?P<pk>\d+)/$', product_detail_view),
 ]
 
 if settings.DEBUG:
