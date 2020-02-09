@@ -76,3 +76,20 @@ Q(tag__name__icontains=query) # if there was a foreign key to this tag
 # Shell Commands for a Brief intro to Foreign Keys
 # https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/shell-commands-brief-intro-foreign-keys
 # https://github.com/codingforentrepreneurs/eCommerce/tree/a85117d052ceaa054f1b025613bbbc46695ea0c0
+
+cd src/
+python manage.py shell
+from tags.models import Tag
+
+Tag.objects.all() # Show All
+Tag.objects.last() # Gets Last on in this case Black
+black = Tag.objects.last()
+black.title
+black.slug
+
+black.products # Shows ManyRelatedManager 
+
+black.products.all() # Shows a Queryset Related to the items in produsts # [<Product: T-SHIRT>, <Product: Hat>, <Product: T-shirt>]
+
+# this gives me the ability to do stuff like 
+black.products.all().first() # Which returns the first Product in this case its <Product: T-SHIRT> basically goes from the black tag to the tshirt product
