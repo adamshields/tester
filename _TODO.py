@@ -50,4 +50,10 @@ I added to ProductQuerySet & ProductManager search methods under the models.py a
 
 improving search method more adding search
 
+
+fixing space in shirts search using Tags
+
+we have to use tags
+it would look similar to this 
+Q(tag__name__icontains=query) # if there was a foreign key to this tag
 """
