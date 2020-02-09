@@ -67,4 +67,4 @@ Q(tag__name__icontains=query) # if there was a foreign key to this tag
 # Adding products manytomanyfield that looks up from Products Model
 # Added to Admin
 # Migrated
-Added tags in DB
+# Added tags in DB
