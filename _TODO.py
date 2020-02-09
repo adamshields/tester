@@ -57,3 +57,6 @@ we have to use tags
 it would look similar to this 
 Q(tag__name__icontains=query) # if there was a foreign key to this tag
 """
+
+# TAG COMPONENT
+# https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/tag-component
