@@ -93,3 +93,24 @@ black.products.all() # Shows a Queryset Related to the items in produsts # [<Pro
 
 # this gives me the ability to do stuff like 
 black.products.all().first() # Which returns the first Product in this case its <Product: T-SHIRT> basically goes from the black tag to the tshirt product
+
+
+cd src/
+python manage.py shell
+from products.models import Product
+
+# we have a queryset
+qs = Product.objects.all() # Now qs is == Product.objects.all()
+
+tshirt = qs.first() # Grab the first Product TSHIRT
+
+tshirt
+
+# now we can do all the get of the product info
+tshirt.title
+tshirt.description
+
+# Using reverse for tag to access tag through the model product
+tshirt.tag_set # Shows ManyRelatedManager 
+tshirt.tag_set.all() # Shows all Tags related to the Tshirt Product that was selected # Returns Queryset <QuerySet [<Tag: T shirt>, <Tag: TShirt>, <Tag: T-shirt>, <Tag: Red>, <Tag: Black>]>
+tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it brings back that item 
