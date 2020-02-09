@@ -8,3 +8,6 @@
 
 # Creating the Search form
 # https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/creating-search-form
+
+# Better Lookups with Q
+# https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/better-lookups-q
