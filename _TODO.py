@@ -11,3 +11,8 @@
 
 # Better Lookups with Q
 # https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/better-lookups-q
+
+"""
+We are going to improve the query because it only searches based on the Title field
+So we import the Q lookup into the viewsw right now
+"""
