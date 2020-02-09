@@ -138,3 +138,10 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 # START OF DJANGO SESSIONS
 # https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/django-sessions
 # https://github.com/codingforentrepreneurs/eCommerce/tree/4b2544743e5b3c650231cf10f8f4ba3f85e10382
+
+# Django Sessions basically stores the time that any given user is on the website using the session. Sessions can expire and hang around etc...
+# Sessions can be used for names and all kinds of things
+# sessions are stored in the database, you can store it in a cookie but speed is an issue thats why db is used for sessions
+
+# here is the documentation for sessions
+# https://docs.djangoproject.com/en/3.0/topics/http/sessions/
