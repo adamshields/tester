@@ -122,3 +122,5 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 
 # Updated Q to contain Tags
 # Q(tag__title__icontains=query) this is kind of like when we did # tshirt.tag_set.filter(title__iexact='Black')
+
+# Tags are done in Lookup with Q pretty robust search so far

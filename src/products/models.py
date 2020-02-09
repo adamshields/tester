@@ -37,7 +37,9 @@ class ProductQuerySet(models.query.QuerySet):
             Q(title__icontains=query) | 
             Q(description__icontains=query) |
             Q(price__icontains=query) |
+            # Foreign Lookups
             Q(tag__title__icontains=query)
+            # Q(tag__slug__icontains=query)
         )
         return self.filter(lookups).distinct()
 
