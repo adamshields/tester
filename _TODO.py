@@ -124,3 +124,11 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 # Q(tag__title__icontains=query) this is kind of like when we did # tshirt.tag_set.filter(title__iexact='Black')
 
 # Tags are done in Lookup with Q pretty robust search so far
+
+# CART COMPONENTS ***************** NEW SECTION
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component
+
+
+# # Cart App
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-app
+# https://github.com/codingforentrepreneurs/eCommerce/tree/ab6ba98698080e5290f0c72e94edc6ebea229a4e
