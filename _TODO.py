@@ -114,3 +114,8 @@ tshirt.description
 tshirt.tag_set # Shows ManyRelatedManager 
 tshirt.tag_set.all() # Shows all Tags related to the Tshirt Product that was selected # Returns Queryset <QuerySet [<Tag: T shirt>, <Tag: TShirt>, <Tag: T-shirt>, <Tag: Red>, <Tag: Black>]>
 tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it brings back that item 
+
+
+# Finish off Search Query based off tags
+# https://www.codingforentrepreneurs.com/courses/ecommerce/search-component/search-related-model
+# https://github.com/codingforentrepreneurs/eCommerce/tree/908e3e07bc2e3ec5f157f6a06f59ad01395b4a2d
