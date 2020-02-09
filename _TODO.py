@@ -48,4 +48,6 @@ I added to ProductQuerySet & ProductManager search methods under the models.py a
         return Product.objects.featured()
 ##########################################################################################################################
 
+improving search method more adding search
+
 """
