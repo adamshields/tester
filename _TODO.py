@@ -30,3 +30,22 @@ example
             return Product.objects.filter(lookups).distinct()                     # then return the Products.objects.filter(lookups) # with distinct() # distinct makes sure multiple things matching it this keeps it from showing duplicates
         return Product.objects.featured()
 """
+
+"""
+Moving Q into the model manager so we can do our lookups in the DB model not the view model
+you have to update your models
+
+##########################################################################################################################
+
+I added to ProductQuerySet & ProductManager search methods under the models.py and they are actually all callable example 
+
+    def get_queryset(self, *args, **kwargs):
+        request = self.request
+        method_dict = request.GET
+        query = method_dict.get('q', None)
+        if query is not None:
+            return Product.objects.search(query) <-- ACTUALLY USING SEARCH FROM MODELS
+        return Product.objects.featured()
+##########################################################################################################################
+
+"""
