@@ -10,7 +10,7 @@ def cart_create(user=None):
 def cart_home(request):
     request.session['cart_id'] = "12"
     cart_id = request.session.get("cart_id", None) 
-    if cart_id is None and isinstance(cart_id, int): 
+    if cart_id is None:
         cart_obj = cart_create()
         request.session['cart_id'] = cart_obj.id 
         print('New Cart Created')
