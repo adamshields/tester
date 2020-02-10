@@ -215,3 +215,5 @@ def cart_home(request):
 # https://github.com/codingforentrepreneurs/eCommerce/blob/c64ba909c1b6af3b5b0502412eef20857cdaa25a/src/carts/models.py
 
 # Issue is when selecting products the "total" for those products are not showing up
+
+# Working on it in Views.py
