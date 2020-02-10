@@ -172,3 +172,6 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 # CREATE A CART IN THE VIEW
 # https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/create-cart-view
 # https://github.com/codingforentrepreneurs/eCommerce/tree/35e8bf075b51d32a7c0fcc1c191700736d64edfc
+
+# Stop for tonight before I improve Cart
+# 3:41 in video 4-create-a-cart-in-view
