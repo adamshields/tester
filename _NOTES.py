@@ -167,3 +167,8 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 # CART MODEL
 # https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-model
 # https://github.com/codingforentrepreneurs/eCommerce/tree/0441dc0e50937eaec64bafa4f9258de70db7efc9
+
+
+# CREATE A CART IN THE VIEW
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/create-cart-view
+# https://github.com/codingforentrepreneurs/eCommerce/tree/35e8bf075b51d32a7c0fcc1c191700736d64edfc
