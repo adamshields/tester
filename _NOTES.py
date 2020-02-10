@@ -237,3 +237,9 @@ def cart_home(request):
 # PRODUCTS
 # https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/products/views.py
 # https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/products/templates/products/detail.html
+
+# ADD TO CART FORM
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/add-cart-form
+# https://github.com/codingforentrepreneurs/eCommerce/tree/d5cced3c944f39164a36b4ef122ba2369006fc92
+# https://github.com/codingforentrepreneurs/eCommerce/blob/d5cced3c944f39164a36b4ef122ba2369006fc92/src/carts/views.py
+# https://github.com/codingforentrepreneurs/eCommerce/tree/d5cced3c944f39164a36b4ef122ba2369006fc92/src/products/templates/products
