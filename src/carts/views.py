@@ -13,4 +13,6 @@ def cart_home(request):
         print(cart_obj.id) # shows actualdynamic cart id for session
     else:
         print('Cart ID Exists')
+        print(cart_id)
+        cart_obj = Cart.objects.get(id=cart_id)
     return render(request, "carts/home.html")
