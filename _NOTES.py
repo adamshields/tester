@@ -219,3 +219,5 @@ def cart_home(request):
 # Working on it in Views.py
 
 # Since in the views is not the greatest way so we should move to models and use signals
+
+# lets add a pre save receiver signal
