@@ -243,3 +243,16 @@ def cart_home(request):
 # https://github.com/codingforentrepreneurs/eCommerce/tree/d5cced3c944f39164a36b4ef122ba2369006fc92
 # https://github.com/codingforentrepreneurs/eCommerce/blob/d5cced3c944f39164a36b4ef122ba2369006fc92/src/carts/views.py
 # https://github.com/codingforentrepreneurs/eCommerce/tree/d5cced3c944f39164a36b4ef122ba2369006fc92/src/products/templates/products
+
+
+# So the cart_update view is considered and Endpoint
+
+# You can use Endpoints Inside of a Form
+
+# We can handle all of the stuff in the productdetailSlug view on products.py but we are going to put it inside of the cart view
+
+# Get in the habit of thinking hey there is some action thats gonna be performed 
+
+# in this view and we are going to redirect when clicked like a button
+
+# Example when you click on "add to cart" its going to redirect you to the cart page based off the endpoint “cart:home”
