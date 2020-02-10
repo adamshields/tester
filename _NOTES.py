@@ -297,3 +297,8 @@ def cart_home(request):
 # THIS IS 100% BEFORE ADDING CART ICON TO MAIN NAVBAR
 
 # Added cart icons and more with fontawesome 
+
+
+# # THE ROADMAP FOR THE CHECKOUT PROCESS
+# https://github.com/codingforentrepreneurs/eCommerce/tree/14bb24d788f96cb5e8593084428de5dcc0bc43b7
+# https://www.codingforentrepreneurs.com/courses/ecommerce/checkout-process/roadmap-checkout-process
