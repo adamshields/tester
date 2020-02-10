@@ -15,7 +15,12 @@ def cart_home(request):
         request.session['cart_id'] = cart_obj.id 
         print('New Cart Created')
     else:
-        print('Cart ID Exists')
-        print(cart_id)
-        cart_obj = Cart.objects.get(id=cart_id)
+        qs = Cart.objects.filter(id=cart_id)
+        if qs.count() == 1:
+            print('Cart ID Exists')
+            cart_obj = qs.first()
+        else:
+            cart_obj = cart_create()
+            request.session['cart_id'] = cart_obj.id
     return render(request, "carts/home.html")
+  
