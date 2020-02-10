@@ -175,3 +175,22 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 
 # Stop for tonight before I improve Cart
 # 3:41 in video 4-create-a-cart-in-view
+
+
+def cart_home(request):
+    request.session['cart_id'] = "12" # we SET this here as a test
+    cart_id = request.session.get("cart_id", None) # We GET the cart session, make sure we get the cart_id from the session thats associated to the "cart_obj" that is in our database
+    if cart_id is None: # if we don't have a cart session cart_id
+        cart_obj = cart_create() # then we 
+        request.session['cart_id'] = cart_obj.id # create one
+    else:
+        qs = Cart.objects.filter(id=cart_id) # if we do have one we want to make sure it actually exist!
+        if qs.count() == 1:
+            print('Cart ID Exists')
+            cart_obj = qs.first() # if it does exist we want to set the same cart_obj to whatever it is
+        else:
+            cart_obj = cart_create() # if it does not exist
+            request.session['cart_id'] = cart_obj.id # then we create a new one a new session with a new cart_id
+    return render(request, "carts/home.html")
+  
+  
