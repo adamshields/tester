@@ -207,3 +207,9 @@ def cart_home(request):
 # EDITED FILES
 # https://github.com/codingforentrepreneurs/eCommerce/blob/20368456287ce253d2b51c7f4d2101f52ceb4d35/src/carts/models.py
 # https://github.com/codingforentrepreneurs/eCommerce/blob/20368456287ce253d2b51c7f4d2101f52ceb4d35/src/carts/views.py
+
+
+# M2M CHANGED SIGNAL TO CALCULATE CART TOTAL
+# https://github.com/codingforentrepreneurs/eCommerce/tree/c64ba909c1b6af3b5b0502412eef20857cdaa25a
+# https://github.com/codingforentrepreneurs/eCommerce/blob/c64ba909c1b6af3b5b0502412eef20857cdaa25a/src/carts/views.py
+# https://github.com/codingforentrepreneurs/eCommerce/blob/c64ba909c1b6af3b5b0502412eef20857cdaa25a/src/carts/models.py
