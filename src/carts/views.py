@@ -6,5 +6,6 @@ def cart_home(request):
     # request.session.set_expiry(300) # Sets the expiration in seconds of session # 300 seconds == 5 minutes then expire this session
     # key = request.session.session_key # shows Session Key
     # print(key) # shows key only when logged in when not logged in it shows None as session Key
-    request.session['first_name'] = 'Justin'
+    # request.session['first_name'] = 'Justin'# used in example
+    request.session['cart_id'] = 12 # Session Setter
     return render(request, "carts/home.html")
