@@ -8,4 +8,5 @@ def cart_home(request):
     # print(key) # shows key only when logged in when not logged in it shows None as session Key
     # request.session['first_name'] = 'Justin'# used in example
     request.session['cart_id'] = 12 # Session Setter
+    request.session['user'] = request.user
     return render(request, "carts/home.html")
