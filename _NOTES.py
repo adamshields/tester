@@ -287,3 +287,8 @@ def cart_home(request):
 # https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/remove-items-cart
 # https://github.com/codingforentrepreneurs/eCommerce/tree/3d7c0fc7fe264eded57ce3244e3ee86d1550a966
 # https://github.com/codingforentrepreneurs/eCommerce/blob/3d7c0fc7fe264eded57ce3244e3ee86d1550a966/src/carts/templates/carts/home.html
+
+
+# CART ICON & FONTAWESOME
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-icon-font-awesome
+# https://github.com/codingforentrepreneurs/eCommerce/tree/691d5ae69e2b5a8f569be0ede3efd5c9fc7897d3
