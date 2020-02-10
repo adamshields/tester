@@ -162,3 +162,8 @@ tshirt.tag_set.filter(title__iexact='Black') # I get the actual tag and it bring
 'keys', 'load', 'model', 'modified', 'pop', 'save', 'serializer', 'session_key', 'set_expiry', 'set_test_cookie', 
 'setdefault', 'test_cookie_worked', 'update', 'values']
 [09/Feb/2020 16:51:41] "GET /cart/ HTTP/1.1" 200 3559
+
+
+# CART MODEL
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-model
+# https://github.com/codingforentrepreneurs/eCommerce/tree/0441dc0e50937eaec64bafa4f9258de70db7efc9
