@@ -5,6 +5,10 @@ from products.models import Product
 
 User = settings.AUTH_USER_MODEL
 
+class CartManager(models.Manager):
+
+    def new(self, user=None):
+        return self.model.objects.create(user=user)
 
 class Cart(models.Model):
     user        = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL) # Any user can have a Cart Anonymous or logged in
@@ -13,6 +17,7 @@ class Cart(models.Model):
     updated     = models.DateTimeField(auto_now=True)
     timestamp   = models.DateTimeField(auto_now_add=True)
 
+    objects = CartManager()
 
     def __str__(self):
         return str(self.id)
