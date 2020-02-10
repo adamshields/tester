@@ -221,3 +221,19 @@ def cart_home(request):
 # Since in the views is not the greatest way so we should move to models and use signals
 
 # lets add a pre save receiver signal and a m2m changed signal
+
+# CART UPDATE VIEW
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-update-view
+# https://github.com/codingforentrepreneurs/eCommerce/tree/864ef942a2331669d0a1c2385431688888916b22
+
+# CART
+# https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/carts/models.py
+# https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/carts/urls.py
+# https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/carts/views.py
+
+# CORE 
+# https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/ecommerce/urls.py
+
+# PRODUCTS
+# https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/products/views.py
+# https://github.com/codingforentrepreneurs/eCommerce/blob/864ef942a2331669d0a1c2385431688888916b22/src/products/templates/products/detail.html
