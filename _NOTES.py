@@ -256,3 +256,9 @@ def cart_home(request):
 # in this view and we are going to redirect when clicked like a button
 
 # Example when you click on "add to cart" its going to redirect you to the cart page based off the endpoint “cart:home”
+
+
+# DISPLAY CART 
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/display-cart
+# https://github.com/codingforentrepreneurs/eCommerce/tree/248c772322547fc7b331fa042627285f67a233a1
+# https://github.com/codingforentrepreneurs/eCommerce/tree/248c772322547fc7b331fa042627285f67a233a1/src/carts
