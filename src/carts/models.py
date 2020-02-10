@@ -6,9 +6,12 @@ from products.models import Product
 User = settings.AUTH_USER_MODEL
 
 class CartManager(models.Manager):
-
     def new(self, user=None):
-        return self.model.objects.create(user=user)
+        user_obj = None
+        if user is not None:
+            if user.is_authenticated:
+                user_obj = user
+        return self.model.objects.create(user=user_obj)
 
 class Cart(models.Model):
     user        = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL) # Any user can have a Cart Anonymous or logged in
