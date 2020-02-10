@@ -281,3 +281,9 @@ def cart_home(request):
     return render(request, "carts/home.html", {})
 
 # Shows how to use a @property in models.py
+
+
+# REMOVE ITEMS FROM THE CART
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/remove-items-cart
+# https://github.com/codingforentrepreneurs/eCommerce/tree/3d7c0fc7fe264eded57ce3244e3ee86d1550a966
+# https://github.com/codingforentrepreneurs/eCommerce/blob/3d7c0fc7fe264eded57ce3244e3ee86d1550a966/src/carts/templates/carts/home.html
