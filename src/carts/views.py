@@ -5,8 +5,9 @@ from .models import Cart
 
 
 def cart_home(request):
+    request.session['cart_id'] = "12"
     cart_id = request.session.get("cart_id", None) 
-    if cart_id is None: # and isinstance(cart_id, int): 
+    if cart_id is None and isinstance(cart_id, int): 
         cart_obj = Cart.objects.create(user=None)
         request.session['cart_id'] = cart_obj.id 
         print('New Cart Created')
