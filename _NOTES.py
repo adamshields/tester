@@ -200,7 +200,7 @@ def cart_home(request):
 # https://github.com/codingforentrepreneurs/eCommerce/tree/3f9592bd3209ae09d5aa839c87356d7c1c6bc1bd
 
 
-# Cart Model Manager Part 2
+# CART MODEL MANAGER PART 2
 # https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-model-manager-part-2
 # https://github.com/codingforentrepreneurs/eCommerce/tree/20368456287ce253d2b51c7f4d2101f52ceb4d35
 
