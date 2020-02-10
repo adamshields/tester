@@ -10,6 +10,7 @@ def cart_home(request):
         # print('Create New Cart')
         cart_obj = Cart.objects.create(user=None)
         request.session['cart_id'] = cart_obj.id # set cart_obj.id to session
+        print(cart_obj.id) # shows actualdynamic cart id for session
     else:
         print('Cart ID Exists')
     return render(request, "carts/home.html")
