@@ -193,4 +193,8 @@ def cart_home(request):
             request.session['cart_id'] = cart_obj.id # then we create a new one a new session with a new cart_id
     return render(request, "carts/home.html")
   
-  
+
+
+# CART MODEL MANAGER
+# https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-model-manager
+# https://github.com/codingforentrepreneurs/eCommerce/tree/3f9592bd3209ae09d5aa839c87356d7c1c6bc1bd
