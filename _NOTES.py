@@ -295,3 +295,5 @@ def cart_home(request):
 
 
 # THIS IS 100% BEFORE ADDING CART ICON TO MAIN NAVBAR
+
+# Added cart icons and more with fontawesome 
