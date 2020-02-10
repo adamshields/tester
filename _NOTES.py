@@ -292,3 +292,6 @@ def cart_home(request):
 # CART ICON & FONTAWESOME
 # https://www.codingforentrepreneurs.com/courses/ecommerce/cart-component/cart-icon-font-awesome
 # https://github.com/codingforentrepreneurs/eCommerce/tree/691d5ae69e2b5a8f569be0ede3efd5c9fc7897d3
+
+
+# THIS IS 100% BEFORE ADDING CART ICON TO MAIN NAVBAR
