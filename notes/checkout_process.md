@@ -22,3 +22,6 @@
    - Tracking Information
    - Purchase Order Number
    - Order Comments
+
+
+We created and orders app we added models and configured and migrated
