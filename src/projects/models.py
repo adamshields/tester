@@ -4,6 +4,10 @@ from django.db.models import Q
 from django.db.models.signals import pre_save, post_save
 
 # GET IN THE HABIT OF THINKING HEY THERE IS SOME ACTION THATS GONNA BE PERFORMED
+# What do we want to do with Team
+# What do we want to do with Project
+# What do we want to do with Environment
+# What do we want to do with Server
 
 class Team(models.Model):
     name           = models.CharField(max_length=200, unique=True, verbose_name='Team Name')
@@ -48,8 +52,8 @@ class Server(models.Model):
     slug           = models.SlugField(unique=True, null=True)
     
     # FOREIGN RELATIONSHIPS
-    teams          = models.ManyToManyField(Team, verbose_name='teams_server_join', blank=True)
-    project        = models.ForeignKey(Project, verbose_name='project_server_join', on_delete=models.CASCADE)
+    teams          = models.ManyToManyField(Team, verbose_name='server_teams_join', blank=True)
+    project        = models.ForeignKey(Project, verbose_name='server_project_join', on_delete=models.CASCADE)
 
     
     class Meta:
