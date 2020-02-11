@@ -1,8 +1,8 @@
 from django.db import models
-
-# Create your models here.
-
+from django.db.models.signals import pre_save, post_save
 from carts.models import Cart
+from core.utils import unique_order_id_generator
+
 
 ORDER_STATUS_CHOICES = (
     ('created', 'Created'),
@@ -26,6 +26,10 @@ class Order(models.Model):
         return self.order_id
 
 
+def pre_save_create_order_id(sender, instance, *args, **kwargs):
+    if not instance.order_id:
+        instance.order_id = unique_order_id_generator(instance)
 
+pre_save.connect(pre_save_create_order_id, sender=Order)
 # generate the order id?
 # generate the order total?
