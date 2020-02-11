@@ -312,3 +312,5 @@ def cart_home(request):
 # CALCULATE ORDER TOTAL
 # https://www.codingforentrepreneurs.com/courses/ecommerce/checkout-process/calculate-order-total
 # https://github.com/codingforentrepreneurs/eCommerce/tree/00a2b87d1bfc671d62514679881cbccd62bc2494
+
+# After the cart has been saved that is when we calculate the total
