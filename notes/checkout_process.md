@@ -25,3 +25,7 @@
 
 
 We created and orders app we added models and configured and migrated
+We are Generating the Order ID
+has to be random and unique order number
+
+Moved utils to core/utils and updated references in products model
