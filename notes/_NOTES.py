@@ -307,3 +307,8 @@ def cart_home(request):
 # THE ORDER COMPONENT
 # https://www.codingforentrepreneurs.com/courses/ecommerce/checkout-process/order-component
 # https://github.com/codingforentrepreneurs/eCommerce/tree/e3edacb39b6b5df4ee0b98297df42909784f86c3
+
+
+# CALCULATE ORDER TOTAL
+# https://www.codingforentrepreneurs.com/courses/ecommerce/checkout-process/calculate-order-total
+# https://github.com/codingforentrepreneurs/eCommerce/tree/00a2b87d1bfc671d62514679881cbccd62bc2494
