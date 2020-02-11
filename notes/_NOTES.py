@@ -314,3 +314,8 @@ def cart_home(request):
 # https://github.com/codingforentrepreneurs/eCommerce/tree/00a2b87d1bfc671d62514679881cbccd62bc2494
 
 # After the cart has been saved that is when we calculate the total
+
+
+# CHECKOUT VIEW
+# https://www.codingforentrepreneurs.com/courses/ecommerce/checkout-process/checkout-view
+# https://github.com/codingforentrepreneurs/eCommerce/tree/40e7c81aa1dc18b1878c6097e486624b5163bc83
