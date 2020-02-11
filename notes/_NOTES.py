@@ -302,3 +302,8 @@ def cart_home(request):
 # # THE ROADMAP FOR THE CHECKOUT PROCESS
 # https://github.com/codingforentrepreneurs/eCommerce/tree/14bb24d788f96cb5e8593084428de5dcc0bc43b7
 # https://www.codingforentrepreneurs.com/courses/ecommerce/checkout-process/roadmap-checkout-process
+
+
+# THE ORDER COMPONENT
+# https://www.codingforentrepreneurs.com/courses/ecommerce/checkout-process/order-component
+# https://github.com/codingforentrepreneurs/eCommerce/tree/e3edacb39b6b5df4ee0b98297df42909784f86c3
